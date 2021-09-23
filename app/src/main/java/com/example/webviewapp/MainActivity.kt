@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         myWebView.settings.allowFileAccess = true
         myWebView.settings.allowContentAccess = true
 //        myWebView.loadUrl("http://10.0.2.2:3000/")
+
         myWebView.loadUrl("https://pmkrezerv.kz/")
 
     }
@@ -53,6 +54,6 @@ class WebAppInterface(private val mContext: Context) {
     }
     @JavascriptInterface
     fun getStringToWeb(): String {
-        return "ok max Android send message "
+        return "Сообщение от Android "
     }
 }
